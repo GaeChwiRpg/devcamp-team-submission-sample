@@ -17,7 +17,7 @@
 - contract test 결과
 - 담당 기능 데모 캡처 또는 로그
 - 팀 통합 체크리스트
-- `examples/week9-team-project-evidence-checklist.md` 기준으로 증빙 정리
+- `examples/week9-team-project-proof-checklist.md` 기준으로 증빙 정리
 
 ## Team Notes
 
@@ -28,4 +28,4 @@
 ## 참고
 
 - 역할 분담 예시: [week9-team-role-split.md](./week9-team-role-split.md)
-- 증빙 체크리스트: [week9-team-project-evidence-checklist.md](./week9-team-project-evidence-checklist.md)
+- 증빙 체크리스트: [week9-team-project-proof-checklist.md](./week9-team-project-proof-checklist.md)
