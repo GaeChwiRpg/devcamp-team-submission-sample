@@ -1,28 +1,22 @@
 # Dev Camp Team Submission Sample
 
-이 저장소는 딩코딩코 부트캠프 Week 9~10 팀 프로젝트 제출 형식을 보여주는 샘플 저장소입니다.
+> 딩코딩코 부트캠프 Week 9~10 팀 프로젝트 제출 형식 sample · 라이프사이클 5 단계 팀 분담 안내
 
-목적:
+## Week 9의 위치
 
-- 개인 제출 레포와 다른 팀 프로젝트 PR 구조를 분리해서 보여주기
-- 담당 기능, 검증 근거, 역할 분담을 PR 하나에 어떻게 남겨야 하는지 예시 제공
+| | Week 8 | **Week 9 (이 레포)** | Week 10 |
+| --- | --- | --- | --- |
+| 단위 | 개인 | **팀** | 팀 + 개인 |
+| 목표 | 코딩 단계 6 요소 + 라이프사이클 **2 단계** 손에 익히기 | **5 단계 모두 팀이 분담**해서 적용 | 통합 + 발표 + 면접 전환 |
+| 산출물 | 본인 미션 1개 재구현 + 6 요소 evidence | 팀 프로젝트 코드 + 라이프사이클 분담 evidence + 개인 PR 2개+ | 최종 발표 + 이력서 |
 
-## 포함 내용
+Week 8에서 개인이 6 요소(claude.md / Commands / Hooks / 페목형제 / Context / Needle)와 라이프사이클 2 단계를 손에 익혔다면, Week 9는 팀이 **라이프사이클 5 단계 모두 분담**해서 실제 서비스 한 사이클을 굴려보는 미션입니다.
 
-- [examples/week9-team-project-pr.md](./examples/week9-team-project-pr.md)
-- [examples/week9-team-project-proof-checklist.md](./examples/week9-team-project-proof-checklist.md)
-- [examples/week9-team-role-split.md](./examples/week9-team-role-split.md)
+## 미션의 3 축
 
-## 핵심 원칙
+### 축 1. 추천 프로젝트 5개 중 1택 (또는 자율 주제)
 
-- Week 9는 개인 레포 미션 디렉토리 제출이 아닙니다.
-- 팀 레포 PR 기준으로 집계합니다.
-- PR 본문에는 담당 기능, 검증 범위, 팀 내 역할이 드러나야 합니다.
-- 코드보다도 "내가 맡은 범위와 근거"가 설명 가능해야 합니다.
-
-## 추천 프로젝트 아이디어
-
-팀은 아래 추천안 중 하나를 고르거나, 같은 난이도 조건을 만족하는 자율 주제를 제안할 수 있습니다.
+같은 난이도 조건을 만족하면 자율 주제도 가능:
 
 - 운영 티켓 / 작업 관리 시스템
 - 커머스 주문 후처리 / 클레임 운영 시스템
@@ -30,11 +24,74 @@
 - 협업형 콘텐츠 검수 / 승인 시스템
 - 의료 / 상담 / 예약 운영 보조 시스템
 
-## 공통 필수 기능
+### 축 2. 공통 필수 기능 6개 (모두 포함)
 
-- 권한 또는 역할 구분
-- 핵심 트랜잭션
-- 검색/필터 리스트
-- 캐시 적용 포인트
-- 비동기 또는 이벤트 흐름
-- AI 보조 기능 1개 이상
+도메인 무관 반드시:
+
+- 권한 또는 역할 구분 1개 이상
+- 핵심 트랜잭션 1개 이상
+- 검색/필터 리스트 1개 이상
+- 캐시 적용 포인트 1개 이상
+- 비동기 또는 이벤트 흐름 1개 이상
+- AI 보조 기능 1개 이상 (요약/분류/우선순위 추천/답변 초안 등)
+
+### 축 3. 라이프사이클 5 단계 팀 분담 (모든 단계 적용)
+
+책 `books/05-week8-10x-ai-native-developer.md` 9·10주차 도구를 팀이 분담해서 운영:
+
+| 단계 | 책 챕터 | 권장 도구 | 팀 산출물 |
+| --- | --- | --- | --- |
+| **1. 기획** | 9주차 03 | Jira MCP, AI PRD 자동 생성 | `PRD.md`, 티켓 분해 |
+| **2. 코딩** | 7주차 04~07, 9주차 02·04·05 | claude.md 헌법, Commands, Hooks, gh CLI, Sub-agents, claude-squad | `CLAUDE.md`, `API-CONTRACT.md` |
+| **3. 테스트** | 9주차 06 | Playwright MCP, Browser MCP | `E2E-TESTS.md` + 시나리오 |
+| **4. 리뷰** | 10주차 01 | Claude GitHub Actions Review, CodeRabbit | `.github/workflows/ai-review.yml` + 리뷰 메모 |
+| **5. 배포·운영** | 10주차 06, 02~05 | Sentry MCP, Docker, Terraform | `MONITORING.md`, IaC 또는 Docker Compose |
+
+5 단계 모두 적용 흔적이 evidence에 있어야 통과. 단 도구 깊이는 팀 사정에 맞게 조정 (예: 배포 단계는 Docker Compose로만 끝내도 OK).
+
+## 산출물
+
+### 팀 공통
+
+- `PRD.md` — 제품 요구사항 (기획 단계)
+- `CLAUDE.md` — 팀 헌법 (도메인 + 코딩 규칙 + 작업 경계)
+- `API-CONTRACT.md` — API 계약 + 변경 이력 (코딩 단계)
+- `E2E-TESTS.md` 또는 `tests/e2e/` — Playwright 시나리오 (테스트 단계)
+- `.github/workflows/ai-review.yml` — Claude Actions 또는 CodeRabbit 설정 (리뷰 단계)
+- `MONITORING.md` — Sentry 또는 운영 도구 설정 (운영 단계)
+- `INTEGRATION-LOG.md` — 팀 통합 진행 로그
+- `LIFECYCLE-COVERAGE.md` — 5 단계 누가 무엇을 적용했는지
+
+### 개인
+
+- 핵심 기능 PR 1개 이상
+- 통합/리뷰 반영 PR 1개 이상
+- 본인이 담당한 라이프사이클 단계의 evidence 기여
+
+## 역할 분담
+
+기술 영역(인증·조회·동시성·캐시 등)과 라이프사이클 단계(기획·코딩·테스트·리뷰·운영)를 **2축으로 결합**합니다. 자세한 매트릭스는 [examples/week9-team-role-split.md](./examples/week9-team-role-split.md).
+
+## 핵심 원칙
+
+- Week 9는 개인 레포 미션 디렉토리 제출이 아닙니다 (팀 레포 PR 기준 집계).
+- PR 본문에는 **담당 기능 + 검증 범위 + 라이프사이클 단계 + 팀 내 역할**이 모두 드러나야 합니다.
+- 코드보다 "**내가 어디를 어떤 도구로 어떻게 검증했는지**"가 설명 가능해야 합니다.
+- AI를 써서 구현 속도는 올리되 품질 통제는 사람이 유지합니다 (Week 8 검증 루프 4단계 그대로).
+
+## 포함 examples
+
+- [week9-team-project-pr.md](./examples/week9-team-project-pr.md) — PR 본문 sample (라이프사이클 단계 표시)
+- [week9-team-project-evidence-checklist.md](./examples/week9-team-project-evidence-checklist.md) — 팀 산출물 체크리스트
+- [week9-team-role-split.md](./examples/week9-team-role-split.md) — 라이프사이클 × 기술 영역 매트릭스
+- [week9-team-lifecycle-coverage.md](./examples/week9-team-lifecycle-coverage.md) — 5 단계 적용 흔적 sample
+- [week9-team-integration-log.md](./examples/week9-team-integration-log.md) — 팀 통합 진행 로그 sample
+
+## 평가 기준 요약
+
+- 추천 프로젝트 또는 자율 주제 1택 + 공통 필수 기능 6개 모두 포함
+- 라이프사이클 **5 단계 모두**에 도구 적용 흔적 (단계별 산출물 ≥ 1)
+- 개인 PR 2개 이상 + PR마다 라이프사이클 단계 명시
+- API 계약 변경 이력 추적 가능
+- AI 보조 기능 검증 메모 포함
+- 팀 통합 로그에 단계별 담당자 + 진행 상태
