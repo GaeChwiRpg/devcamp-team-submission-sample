@@ -1,6 +1,28 @@
 # Dev Camp Team Submission Sample
 
 > 딩코딩코 부트캠프 Week 9~10 팀 프로젝트 제출 형식 sample · 라이프사이클 5 단계 팀 분담 안내
+> 이 레포는 코호트 시작 시 자동으로 팀 레포로 복제됩니다 (`bootcamp-admin` 이 Git clone). 팀이 아래 템플릿을 채워가는 흐름.
+
+## 이 레포에서 시작하는 법
+
+레포 루트에 비어 있는 템플릿이 깔려 있습니다. 팀이 채워야 할 순서:
+
+1. **`PRD.md`** — 기획 단계 책임자가 페르소나 / User Story / 6 공통 필수 기능 매핑
+2. **`DECISIONS.md`** — 첫 의사결정 D-001 부터 누적
+3. **`CLAUDE.md`** — 팀 헌법 (도메인 + 코딩 규칙 + 작업 경계). 모든 prompt 에 자동 포함
+4. **`API-CONTRACT.md`** — API endpoint + 변경 이력
+5. **`LIFECYCLE-COVERAGE.md`** — 5 단계 누가 무엇을 했는지 매트릭스
+6. **`INTEGRATION-LOG.md`** — Day 1~5 일자별 진행 + 회고 통계
+7. **`MONITORING.md`** — 운영 단계 책임자가 도구 선택 + 시나리오
+8. **`RETROSPECTIVE.md`** — Phase 2 종료 시 KPT + Phase 3 우선순위
+9. **`presentation/SLIDE-OUTLINE.md`** + **`presentation/DEMO-SCRIPT.md`** — Week 10 발표 골격
+10. **`INTERVIEW-ANSWERS.md`** — Week 10 면접 답변 5장 흐름 6개
+
+PR 본문 표준은 [`.github/PULL_REQUEST_TEMPLATE.md`](./.github/PULL_REQUEST_TEMPLATE.md). PR 마다 라이프사이클 단계 + 검증 + AI 보조 흔적을 명시해야 [`team-pr-guard`](./.github/workflows/team-pr-guard.yml) CI 통과.
+
+채워진 정답 sample 은 [`GaeChwiRpg/devcamp-team-project-showcase`](https://github.com/GaeChwiRpg/devcamp-team-project-showcase) 참고 — 단, **본인 팀 진행 중에는 정답을 보지 않는 것이 학습 효과 큽니다.**
+
+
 
 ## Week 9의 위치
 
