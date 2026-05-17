@@ -10,7 +10,7 @@
 ## 포함 내용
 
 - [examples/week9-team-project-pr.md](./examples/week9-team-project-pr.md)
-- [examples/week9-team-project-evidence-checklist.md](./examples/week9-team-project-evidence-checklist.md)
+- [examples/week9-team-project-proof-checklist.md](./examples/week9-team-project-proof-checklist.md)
 - [examples/week9-team-role-split.md](./examples/week9-team-role-split.md)
 
 ## 핵심 원칙
