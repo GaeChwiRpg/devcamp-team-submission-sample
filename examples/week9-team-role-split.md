@@ -37,11 +37,9 @@
 
 ## PR 본문 명시 형식
 
-```
-- 기술 영역: 핵심 조회
-- 라이프사이클 단계: 코딩 + 테스트
-- 본 PR이 다룬 산출물: ProductSearchService, ProductRepository 인덱스, tests/e2e/search-flow.spec.ts
-```
+루트의 [`.github/PULL_REQUEST_TEMPLATE.md`](../.github/PULL_REQUEST_TEMPLATE.md) 형식 그대로 (체크박스 + 섹션) — 채워진 sample 은 [`week9-team-project-pr.md`](./week9-team-project-pr.md) 참고.
+
+핵심은 본인의 **기술 영역 + 라이프사이클 단계 + 검증 근거** 가 PR 1개에서 한눈에 보여야 한다는 점.
 
 ## 핵심
 
